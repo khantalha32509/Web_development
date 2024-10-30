@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Finder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FCF6F5;
+            color: #990011;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        h2 {
+            font-size: 100px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+        }
+        .text-area{
+            border: none;
+            border-radius: 5px;
+            outline: #990011;
+            outline-style: double;
+            width: 100%;
+            
+        }
+      
+    </style>
+</head>
+
+<body>
+    <h2>Holiday Finder</h2>
+    <p>Unlock Your Next Adventure with Our Holiday Finder!</p>
+
+    <form action="/submit" method="post">
+        <div class="container">
+            <div>
+                <label for="countryId">Country Id:</label><br>
+                <input class="text-area" type="text" id="countryId" name="countryId">
+            </div>
+            <div>
+                <label for="year">Year:</label><br>
+                <input class="text-area" type="text" name="year" id="year">
+            </div>
+            <div>
+                <label for="holiday">Select the type:</label><br>
+                <select  name="type" id="holiday">
+                    <option value="longWeekend">Long Weekend</option>
+                    <option value="publicHoliday">Public Holidays</option>
+                    <option value="both">Both</option>
+                </select>
+            </div>
+            <div class="content"><p>Holidays:<%= content %>/p></div>
+            <div>
+                <input type="submit" value="Check">
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>

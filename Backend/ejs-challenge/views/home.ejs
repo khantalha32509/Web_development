@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+<h1>Home</h1>
+<p><%= startingContent %></p>
+<% postBody.forEach((element) => {%>
+    <h2><%= element.title %></h2> 
+    <%  if((element.body).length>100){  %>
+    <% let trimmedPara=(element.body).substring(0,100) %>
+    <p><%= trimmedPara %>... <a href="/posts/<%=element.title%>">Read more</a></p>
+<%}} %>
+<% else{ %>
+ <p>   <%- element.body %></p>
+    <% }) %>
+<%- include("partials/footer.ejs") %>

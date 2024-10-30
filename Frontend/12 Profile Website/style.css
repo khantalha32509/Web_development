@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    letter-spacing: 1px;
+    line-height:1.2;
+}
+.bg-pic{
+  
+    position: relative;
+}
+.container{
+    position: absolute;
+    top: 3px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1.5fr;
+}
+.pic{
+   
+    border-radius: 50%;
+}
+.navbar {
+   
+    display: flex;
+    flex-direction: column;
+    
+}
+a{
+    text-decoration: none;
+    margin-left:20px ;
+    font-family: 'Tektur', cursive;
+    font-size: 25pt;
+    flex-basis: 200px;
+    color: #0CC0DF;
+    opacity: 0.5;
+    font-weight: 100;
+}
+
+.para-info-experiance{
+    font-size: 12pt;
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-right: 40px;
+    color: white;
+    
+}
+.para-info{
+    font-size: 20pt;
+    margin-left: 100px;
+    margin-top: 150px;
+    color: white
+}
+.mohd{
+    font-size: 130pt;
+    color: aliceblue;
+    font-weight: 700;
+}
+.talha{
+    font-size: 130pt;
+    color: #0CC0DF;
+    font-weight: 700;
+}
+.home{
+    grid-row-end:span 2 ;
+}
+
+.highlight{
+    color: #0CC0DF;
+    font-weight: 700;
+}
+.head-about{
+    font-size: 48pt;
+    font-weight: 700;
+    color: #0CC0DF;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+.para-info-about{
+    font-size: 20pt;
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-right: 40px;
+    color: white
+}
+.navbar>*{
+    flex-basis: 60px;
+}
+.nav-dec{
+    opacity: 1;
+    font-size: 32pt;
+    font-weight:900 ;
+    color: #0CC0DF;
+}
+.sub-title{
+    font-size: 20pt;
+    color: aquamarine;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+

@@ -1,0 +1,24 @@
+<script>
+  // Get a reference to the checkbox and the form
+  const checkbox = document.getElementById("myCheckbox");
+  const form = document.getElementById("myForm");
+
+  // Add an event listener to the checkbox
+  checkbox.addEventListener("change", function() {
+      // Check if the checkbox is checked
+      if (checkbox.checked) {
+          // If checked, submit the form
+          form.submit();
+      }
+  });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+</body>
+
+<footer>
+  Copyright 2018 The App Brewery
+</footer>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "just a practice",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "talha",
+  "license": "ISC",
+  "dependencies": {
+    "superhero": "^2.13.6",
+    "superheroes": "^3.0.0"
+  }
+}

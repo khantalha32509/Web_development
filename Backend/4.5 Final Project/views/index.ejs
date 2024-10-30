@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="container">
+    <div class="date"><%- box %></div>  
+    <%if(itemsArray){%>
+   <ul>
+    <% for(var i=0;i<itemsArray.length;i++){ %>
+      <li><%- itemsArray[i] %></li>
+    <% } %>
+   
+    </ul>   
+    <% } %> 
+    <% %>
+
+    <div class="items">
+        <form action="/submit" method="POST">
+            <input type="text" name="newItem" class="text-area">
+            <input type="submit"  class="button" value="+">
+        </form> 
+    </div>
+    
+</div>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>
